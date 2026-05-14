@@ -1,23 +1,23 @@
 # Site Settings
-title: "Your Name"
+title: "Zicheng Yu"
 description: "Academic Homepage"
 url: ""
 baseurl: ""
 
 # Personal Information
 author:
-  name: "Your Name"
-  position: "Ph.D. Student"
-  department: "Dept. of Computer Science & Engineering"
-  university: "Your University"
-  location: "City, Country"
-  email: "your.email@example.com"
-  photo: "images/profile.svg"
+  name: "Zicheng Yu"
+  position: "Undergraduate Student"
+  department: "School of Information Management"
+  university: "Nanjing University"
+  location: "Nanjing, China"
+  email: "yuzicheng@smail.nju.edu.cn"
+  photo: "images/profile.jpg"
 
 # Social Links
 social:
   google_scholar: "https://scholar.google.com/citations?user=YOUR_ID"
-  github: "https://github.com/YOUR_USERNAME"
+  github: "https://github.com/zicheng-yu"
   cv: "resources/CV.pdf"
 
 # Navigation
