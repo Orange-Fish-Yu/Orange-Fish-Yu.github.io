@@ -1,0 +1,49 @@
+# Publications organized by category
+journals:
+  - venue: "TKDE"
+    title: "Sample Journal Paper Title"
+    authors: "<b>Your Name</b>, Co-author Name, Another Author"
+    full_venue: "IEEE Transactions on Knowledge and Data Engineering"
+    pdf: "https://arxiv.org/abs/XXXX.XXXXX"
+    code: "https://github.com/YOUR_USERNAME/REPO"
+
+  - venue: "ACM TIST"
+    title: "Another Journal Paper Title"
+    authors: "Co-author Name, <b>Your Name</b>, Another Author"
+    full_venue: "ACM Transactions on Intelligent Systems and Technology"
+    pdf: "https://arxiv.org/abs/XXXX.XXXXX"
+
+conference:
+  - venue: "NeurIPS'25"
+    title: "Sample Conference Paper Title"
+    authors: "<b>Your Name</b>, Co-author Name, Another Author"
+    full_venue: "Conference on Neural Information Processing Systems"
+    pdf: "https://arxiv.org/abs/XXXX.XXXXX"
+    code: "https://github.com/YOUR_USERNAME/REPO"
+
+  - venue: "ICML'25"
+    title: "Another Conference Paper Title"
+    authors: "Co-author Name, <b>Your Name</b>, Another Author"
+    full_venue: "International Conference on Machine Learning"
+    pdf: "https://arxiv.org/abs/XXXX.XXXXX"
+
+  - venue: "KDD'24"
+    title: "Third Conference Paper Title"
+    authors: "<b>Your Name</b>, Co-author Name"
+    full_venue: "ACM SIGKDD Conference on Knowledge Discovery and Data Mining"
+    pdf: "https://arxiv.org/abs/XXXX.XXXXX"
+    code: "https://github.com/YOUR_USERNAME/REPO"
+
+preprints:
+  - venue: "In reviewing"
+    title: "Preprint Paper Title Under Review"
+    authors: "<b>Your Name</b>, Co-author Name, Another Author"
+    full_venue: "Target Journal/Conference Name"
+    pdf: "https://arxiv.org/abs/XXXX.XXXXX"
+
+  - venue: "Workshop"
+    title: "Workshop Paper Title"
+    authors: "<b>Your Name</b>, Co-author Name"
+    full_venue: "Workshop at ICML 2024"
+    pdf: "https://arxiv.org/abs/XXXX.XXXXX"
+    note: "Note: This is a sample workshop paper"

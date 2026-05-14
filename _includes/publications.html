@@ -1,0 +1,62 @@
+<section class="colorlib-publication" data-section="publication">
+	<div class="colorlib-narrow-content">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+				data-animate-effect="fadeInLeft">
+				<h2 class="colorlib-heading animate-box">Publication</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+				
+				<h3>Journals</h3>
+				<ul>
+					{% for pub in site.data.publications.journals %}
+					<li>
+						<font style="color: blue">(<b>{{ pub.venue }}</b>) </font>
+						<b>{{ pub.title }}</b>
+						{% if pub.pdf %}<a href="{{ pub.pdf }}">[PDF]</a>{% endif %}
+						{% if pub.code %}<a href="{{ pub.code }}">[CODE]</a>{% endif %}
+						<br />
+						{{ pub.authors }}<br />
+						<i>{{ pub.full_venue }}</i>
+					</li>
+					{% endfor %}
+				</ul>
+
+				<h3>Conference</h3>
+				<ul>
+					{% for pub in site.data.publications.conference %}
+					<li>
+						<font style="color: blue">(<b>{{ pub.venue }}</b>) </font>
+						<b>{{ pub.title }}</b>
+						{% if pub.pdf %}<a href="{{ pub.pdf }}">[PDF]</a>{% endif %}
+						{% if pub.code %}<a href="{{ pub.code }}">[CODE]</a>{% endif %}
+						<br />
+						{{ pub.authors }}<br />
+						<i>{{ pub.full_venue }}</i>
+					</li>
+					{% endfor %}
+				</ul>
+
+				<h3>Preprints and Workshop</h3>
+				<ul>
+					{% for pub in site.data.publications.preprints %}
+					<li>
+						<font style="color: blue">(<b>{{ pub.venue }}</b>) </font>
+						<b>{{ pub.title }}</b>
+						{% if pub.pdf %}<a href="{{ pub.pdf }}">[PDF]</a>{% endif %}
+						{% if pub.code %}<a href="{{ pub.code }}">[CODE]</a>{% endif %}
+						<br />
+						{{ pub.authors }}<br />
+						<i>{{ pub.full_venue }}</i>
+						{% if pub.note %}
+						<font style="color: red">{{ pub.note }}</font>
+						{% endif %}
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,32 @@
+<div class="text-center profile-info">
+	<div class="author-img" style="background-image: url({{ site.author.photo | relative_url }});"></div>
+	<h1 id="colorlib-logo"><a href="{{ '/' | relative_url }}">{{ site.author.name }}</a></h1>
+	<strong>
+		<span class="position">{{ site.author.position }}</span>
+		<span class="position">{{ site.author.department }}</span>
+		<span class="position">{{ site.author.university }}</span>
+		<span class="position">{{ site.author.location }}</span>
+		<br>
+		<span class="position" style="text-transform: initial;">Email: {{ site.author.email }}</span>
+		{% if site.social.google_scholar %}
+		<a href="{{ site.social.google_scholar }}"> [Google Scholar] </a>
+		{% endif %}
+		{% if site.social.github %}
+		<a href="{{ site.social.github }}"> [Github]</a>
+		{% endif %}
+		{% if site.social.cv %}
+		<a href="{{ site.social.cv | relative_url }}"> [CV]</a>
+		{% endif %}
+	</strong>
+</div>
+<nav id="colorlib-main-menu" role="navigation" class="navbar">
+	<div id="navbar" class="collapse">
+		<ul>
+			{% for item in site.navigation %}
+			<li{% if forloop.first %} class="active"{% endif %}>
+				<a href="#" data-nav-section="{{ item.section }}">{{ item.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</nav>

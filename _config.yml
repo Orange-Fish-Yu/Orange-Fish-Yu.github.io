@@ -1,0 +1,49 @@
+# Site Settings
+title: "Your Name"
+description: "Academic Homepage"
+url: ""
+baseurl: ""
+
+# Personal Information
+author:
+  name: "Your Name"
+  position: "Ph.D. Student"
+  department: "Dept. of Computer Science & Engineering"
+  university: "Your University"
+  location: "City, Country"
+  email: "your.email@example.com"
+  photo: "images/profile.svg"
+
+# Social Links
+social:
+  google_scholar: "https://scholar.google.com/citations?user=YOUR_ID"
+  github: "https://github.com/YOUR_USERNAME"
+  cv: "resources/CV.pdf"
+
+# Navigation
+navigation:
+  - title: "About"
+    section: "about"
+  - title: "News"
+    section: "news"
+  - title: "Publication"
+    section: "publication"
+  - title: "Experience"
+    section: "experience"
+  - title: "Honors and Awards"
+    section: "honors"
+
+# Build Settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - node_modules
+  - vendor
