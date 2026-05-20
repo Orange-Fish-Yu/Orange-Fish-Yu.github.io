@@ -107,34 +107,11 @@
 			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
 				aria-expanded="false" aria-controls="navbar"><i></i></a>
 			<aside id="colorlib-aside" role="complementary" class="border">
-				<div class="text-center profile-info">
-					<div class="author-img" style="background-image: url({{ site.author.photo | relative_url }});"></div>
-					<h1 id="colorlib-logo"><a href="{{ '/' | relative_url }}">{{ site.author.name }}</a></h1>
-					<strong>
-						<span class="position">{{ site.author.position }}</span>
-						<span class="position">{{ site.author.department }}</span>
-						<span class="position">{{ site.author.university }}</span>
-						<span class="position">{{ site.author.location }}</span>
-						<br>
-						<span class="position" style="text-transform: initial;">Email: {{ site.author.email }}</span>
-						{% if site.social.google_scholar %}
-						<a href="{{ site.social.google_scholar }}"> [Google Scholar] </a>
-						{% endif %}
-						{% if site.social.github %}
-						<a href="{{ site.social.github }}"> [Github]</a>
-						{% endif %}
-						{% if site.social.cv %}
-						<a href="{{ site.social.cv | relative_url }}"> [CV]</a>
-						{% endif %}
-					</strong>
-				</div>
-				<div class="top-tabs">
-					<a href="{{ '/' | relative_url }}" class="tab">Homepage</a>
-					<a href="{{ '/blog' | relative_url }}" class="tab active">Blog</a>
-				</div>
+				{% include sidebar.html %}
 			</aside>
 
 			<div id="colorlib-main">
+				{% include page-tabs.html %}
 				<div class="post-container">
 					<a href="{{ '/blog' | relative_url }}" class="back-link">
 						<i class="fa fa-arrow-left"></i> Back to Blog

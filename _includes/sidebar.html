@@ -19,10 +19,6 @@
 		{% endif %}
 	</strong>
 </div>
-<div class="top-tabs">
-	<a href="{{ '/' | relative_url }}" class="tab {% if page.url == '/' %}active{% endif %}">Homepage</a>
-	<a href="{{ '/blog' | relative_url }}" class="tab {% if page.url == '/blog/' or page.url contains '/blog/' %}active{% endif %}">Blog</a>
-</div>
 {% if page.url == '/' %}
 <nav id="colorlib-main-menu" role="navigation" class="navbar">
 	<div id="navbar" class="collapse">
