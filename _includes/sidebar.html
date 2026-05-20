@@ -24,7 +24,11 @@
 		<ul>
 			{% for item in site.navigation %}
 			<li{% if forloop.first %} class="active"{% endif %}>
+				{% if item.url %}
+				<a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+				{% else %}
 				<a href="#" data-nav-section="{{ item.section }}">{{ item.title }}</a>
+				{% endif %}
 			</li>
 			{% endfor %}
 		</ul>
