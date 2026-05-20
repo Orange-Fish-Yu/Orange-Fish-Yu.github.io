@@ -440,3 +440,36 @@ body.offcanvas {
   height: 14px;
   width: 100%;
 }
+
+/* Top tabs for Homepage/Blog switching */
+.top-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 10px;
+}
+
+.top-tabs .tab {
+  display: inline-block;
+  padding: 8px 20px;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -11px;
+}
+
+.top-tabs .tab:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.top-tabs .tab.active {
+  color: #2c98f0;
+  border-bottom-color: #2c98f0;
+}

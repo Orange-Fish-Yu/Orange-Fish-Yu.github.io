@@ -32,8 +32,6 @@ navigation:
     section: "experience"
   - title: "Honors and Awards"
     section: "honors"
-  - title: "Blog"
-    url: "/blog"
 
 # Blog Settings
 permalink: /blog/:title/

@@ -108,10 +108,17 @@ def slugify(text):
 
 def convert_obsidian_syntax(content):
     """Convert Obsidian-specific markdown to standard markdown."""
-    # Convert ![[image.png|size]] to ![](image.png)
+    # Convert ![[image.png|size]] to ![](image.png)  (Obsidian wiki link format)
     content = re.sub(
         r"!\[\[([^|\]]+?)(?:\|\d+)?\]\]",
         r"![](\1)",
+        content
+    )
+    
+    # Convert ![image.png|size](url) to ![image.png](url)  (standard markdown with size hint)
+    content = re.sub(
+        r"!\[([^\]]+?)\|\d+\]\(",
+        r"![\1](",
         content
     )
     
